@@ -1,0 +1,35 @@
+/* Votre CSS ici (uniquement) */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.page-label {
+    width: 80px;
+
+}
+
+.page-number {
+    width: 40px;
+    flex: 1 1 auto;
+}
+
+@media (max-width: 600px) {
+    .page-number {
+        display: none;
+    }
+    .page-label {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width : 550px){
+    .pagination {
+        flex-direction: column;
+
+    }
+    .page-label {
+        width: 100%;
+    }
+}
